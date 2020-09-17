@@ -34,6 +34,7 @@ If you get stuck or are not sure how to proceed, you may look at the hints file 
 <li> Allow the user to move back and forward through the checkout process.
 <li> When the user reaches the confirmation page, let the user edit any prior step. After editing fields in that step, the user should be returned to the confirmation page.
 <li> Write tests and use Nightwatch.js to confirm your entire checkout flow is working correctly.
+
 ## Nightmare Mode
 <li> Refactor to use Redux to store your state.
 <li> If the window is closed and reopened, restore the form field values that were present when the user closed the window.
