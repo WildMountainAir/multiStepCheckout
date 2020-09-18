@@ -1,0 +1,25 @@
+{
+  "name": "multistepcheckout",
+  "version": "1.0.0",
+  "description": "a single-page app that takes a user through a series of forms that simulate a shopping cart checkout experience.",
+  "main": "queries.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit ",
+    "start:server": "nodemon server.js",
+    "start:react": "cd frontend && npm start",
+    "seed": "mysql -u root -p < schema.sql",
+    "build": "cd frontend && npm run build && cd ..",
+    "install-all": "npm install && cd frontend && npm install && cd ..",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WildMountainAir/multiStepCheckout.git"
+  },
+  "author": "Alison Sipos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WildMountainAir/multiStepCheckout/issues"
+  },
+  "homepage": "https://github.com/WildMountainAir/multiStepCheckout#readme"
+}
