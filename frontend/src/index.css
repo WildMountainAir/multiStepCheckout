@@ -1,6 +1,19 @@
+/*---------------*/
+/* CUSTOM STYLES */
+/*---------------*/
+
+header {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /*------------*/
 /* TYPOGRAPHY */
 /*------------*/
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -30,9 +43,24 @@ p {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 200;
 }
+
 /*---------*/
 /* BUTTONS */
 /*---------*/
+
+button {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+}
+
+/*-------*/
+/* FORMS */
+/*-------*/
+
+::placeholder {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+}
 
 /*------------*/
 /* COMPONENTS */
