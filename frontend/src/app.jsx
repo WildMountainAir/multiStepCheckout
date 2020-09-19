@@ -1,7 +1,8 @@
-import React from 'react';
+
 
 class App extends React.Component {
   constructor(props) {
+    super(props);
     this.state = {
       currentForm: 1
     }
@@ -9,18 +10,21 @@ class App extends React.Component {
   }
 
   render() {
-    // var correctForm = this.state.currentForm === 3 ? <Form3 /> : this.state.currentForm === 2 ? <Form2 /> : <Form1 />;
+    var correctForm = this.state.currentForm === 3 ? <Form3 /> : this.state.currentForm === 2 ? <Form2 /> : <Form1 />;
     return (
       <div className="app">
         hello world
         {/* forms on submit will call setState and update current form state to next form and trigger render of form to appear  */}
-        {/* {
+        {
           correctForm
-        } */}
+        }
       </div>
     );
   }
 }
+
+//////STYLES//////
+
 
 //////COMPONENTS//////
 
@@ -88,4 +92,7 @@ const Form3 = (props) => (
   </div>
 );
 
-export default App;
+ReactDOM.render(
+  <App />,
+    document.getElementById('root')
+);
