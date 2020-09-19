@@ -6,14 +6,14 @@ const queries = require("./queries");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
+app.use(express.static(path.join(__dirname, './frontend/public/')));
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-// render home page
-app.post("/", (req, res) => {
-    res.send('index');
-  })
+app.get('/', (res, req) => {
+    console.log(res);
+})
 
 // set server to run on port
 app.listen(PORT, () => {
